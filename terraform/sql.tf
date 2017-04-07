@@ -4,7 +4,8 @@ resource "google_sql_database_instance" "master" {
   name             = "${var.ert_sql_instance_name}"
 
   settings {
-    tier = "db-f1-micro"
+    tier = "D0"
+#    tier = "db-f1-micro"
 
     ip_configuration = {
       ipv4_enabled = true
